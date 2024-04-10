@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import Navbar from './navbar';
 import './App.css';
 import Home from './home';
@@ -9,7 +9,7 @@ import Contact from './contact';
 import Footer from './footer';
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
       <Home />
       <OurCollection />
@@ -17,7 +17,12 @@ function App() {
       <Review />
       <Contact />
       <Footer />
+      <button onClick={scrollToTop} id="btnTop">Back to Top</button>
     </div>
   );
 }
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 export default App;
