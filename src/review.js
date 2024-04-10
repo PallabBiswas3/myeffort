@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Review = () => {
     return (
-        <section id="review">
+        <section id="reviews">
             <div>
                 <div className="header"><h1>Review of Our Customers</h1></div>
                 <div className="bestSelling d-flex flex-wrap justify-content-center">
